@@ -1,0 +1,56 @@
+# @host = http://192.168.0.212:8001/api/v1
+
+@host = https://dev-api.limadi.dk/api/v1
+# @host = https://dev-api.limadi.dk/api/v1
+
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiZTVjMjI2MDExOGI1NzFjYTI3MzkxODFmZDgyMmM3ZTUzNzU4MmZjMDg5MmI3MmM2ZTg2ZjY5Mjg2NTBhNDlmNzg0NTQ5MmZjOTU5OWUwYmQiLCJpYXQiOjE2NzIwNDg2MTkuNDAxMjQ4OTMxODg0NzY1NjI1LCJuYmYiOjE2NzIwNDg2MTkuNDAxMjUzOTM4Njc0OTI2NzU3ODEyNSwiZXhwIjoxNzAzNTg0NjE5LjM5MDk4NjkxOTQwMzA3NjE3MTg3NSwic3ViIjoiMTE4Iiwic2NvcGVzIjpbXX0.WOpoEo4tV8w8qIyGAdKxoJwejUZyNZDNyt0fHviPfTT8JjEpQk_s1rk6h95Dwt5VGlub8tWnHV1zYbEeMryagZJxPoWv3IH7P8ADDB3Hy97vz8j1uhEJQyZF_pmgWt9Rw31TanKY0gJqet5qvyAT5NmnU93UHijwufZYIhfjg6SJ4RlQOVxkQTiTreVITSD9ZSzU2vb56utPoml-Ix52Im7iJ0Hm1NGkqYT5ILNCbVx8wQXHqJmhjmUD44ArhstzQcYmk7YQdzC0ilEgtLdMleq-HMlzB21HlC1MtvWGQC4U3l31cXpUSJYZIknbzDkEq5NjALgBF6LXTtc-Rvm9tqeo39oZTM2ROidv3FjZqDsT6tmV46V9WbEhLyHNaec-0122D_m1FR_h4pOj9aDYdxzr5d9Cu1dr7ltOt-hgz9D-c2xd3CZ4M2Uy-JRNQu8fclywKRA376XawjwPGezjiiUkgHAF-8jeuy1Rsbv5LPiX7XmLpaM7_9-JB0WQ1gc-Yu0lqe3rpg-AZgOgcsrHQDW9-myRiuhL9bmOecb15PP0ZIhjiOCzFBEs3RzYxttbIZzlMRlIPBmqN9dKJsn2pi8Qf9fxp3m6LEq45NP_wzyE4bZqmEbASwu21JoTpsYUv0Mj1_HaspTbfVXpzRt7mESXxhJAi9gC55WUcQp8-_U
+
+
+@role = company
+
+### student Login
+POST {{host}}/auth/login HTTP/1.1
+content-type: application/json
+app-role: {{ role }}
+
+{
+    "email": "evil@g.com",
+    "password": "P@$$w0rd"
+}
+
+
+### ==============================
+### Login
+POST {{host}}/auth/login HTTP/1.1
+content-type: application/json
+role: company
+
+{
+    # "email": "alibaba@g.com",
+    # "email": "gim@g.com",
+    # "email": "pathao@g.com",
+    # "email": "paper@g.com",
+    # "email": "strange@g.com",
+    # "email": "kfc@g.com",
+    # "email": "pizza@g.com",
+    # "email": "genie@g.com",
+    # "email": "debd@g.com",
+    # "email": "sellify@g.com",
+    # "email": "ubisoft@g.com",
+    "email": "evil@g.com",
+    # "email": "arafat@destroy.com",
+    # "email": "u3@limadi.dk",
+    # "email": "notun@limadi.dk",
+    # "email": "xcompany@limadi.dk",
+    # "email": "delete@limadi.sk",
+    # "email": "u2@limadi.dk",
+    # "email": "nafisa.ice.iu+test2@gmail.com",
+    # "email": "genieuiux+001@gmail.com",
+    # "email": "marufahamed26+dco1@gmail.com",
+    # "email": "genie.qualityassurance+13@gmail.com",
+    # "email": "tamjedpeace+company1@gmail.com",
+    # "password": "Nafisa@2"
+    # "password": "Password@1"
+    "password": "P@$$w0rd"
+    # "password": "Adam3268,"
+}
